@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dharshu Shopping</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+
+        <h1>🛍️ Dharshu Shopping</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="women.html">Women</a>
+            <a href="boys.html">Boys</a>
+            <a href="kids.html">Kids</a>
+            <a href="electronics.html">Electronics</a>
+            <a href="cart.html">🛒 Cart</a>
+        </nav>
+
+    </header>
+
+
+    <!-- Welcome Section -->
+    <section class="welcome">
+
+        <h2>Welcome to Dharshu Shopping</h2>
+
+        <p>Fashion & Electronics at Best Prices</p>
+
+        <button onclick="window.location.href='women.html'">
+            Shop Now
+        </button>
+
+    </section>
+
+
+    <!-- Categories -->
+    <section class="categories">
+
+        <h2>Shop by Category</h2>
+
+        <div class="category-container">
+
+            <div class="category"
+                 onclick="window.location.href='women.html'">
+
+                <h3>👩 Women</h3>
+
+                <p>Trendy Dresses & Fashion</p>
+
+            </div>
+
+
+            <div class="category"
+                 onclick="window.location.href='boys.html'">
+
+                <h3>👦 Boys</h3>
+
+                <p>Stylish Boys Collection</p>
+
+            </div>
+
+
+            <div class="category"
+                 onclick="window.location.href='kids.html'">
+
+                <h3>🧒 Kids</h3>
+
+                <p>Beautiful Kids Wear</p>
+
+            </div>
+
+
+            <div class="category"
+                 onclick="window.location.href='electronics.html'">
+
+                <h3>📱 Electronics</h3>
+
+                <p>Latest Electronic Products</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Popular Products -->
+    <section class="products">
+
+        <h2>Popular Products</h2>
+
+        <div class="product-container">
+
+
+            <!-- Women's Dress -->
+            <div class="product">
+
+                <div class="product-image">👗</div>
+
+                <h3>Women's Dress</h3>
+
+                <p>
+                    <del>₹1,499</del>
+                    <strong>₹899</strong>
+                </p>
+
+                <span>40% OFF</span>
+
+                <button
+                    class="add-cart"
+                    data-name="Women's Dress"
+                    data-price="899"
+                    data-original="1499">
+
+                    Add to Cart
+
+                </button>
+
+            </div>
+
+
+            <!-- Boys T-Shirt -->
+            <div class="product">
+
+                <div class="product-image">👕</div>
+
+                <h3>Boys T-Shirt</h3>
+
+                <p>
+                    <del>₹799</del>
+                    <strong>₹499</strong>
+                </p>
+
+                <span>38% OFF</span>
+
+                <button
+                    class="add-cart"
+                    data-name="Boys T-Shirt"
+                    data-price="499"
+                    data-original="799">
+
+                    Add to Cart
+
+                </button>
+
+            </div>
+
+
+            <!-- Wireless Headphones -->
+            <div class="product">
+
+                <div class="product-image">🎧</div>
+
+                <h3>Wireless Headphones</h3>
+
+                <p>
+                    <del>₹2,499</del>
+                    <strong>₹1,499</strong>
+                </p>
+
+                <span>40% OFF</span>
+
+                <button
+                    class="add-cart"
+                    data-name="Wireless Headphones"
+                    data-price="1499"
+                    data-original="2499">
+
+                    Add to Cart
+
+                </button>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- Script -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

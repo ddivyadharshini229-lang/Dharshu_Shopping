@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Women's Collection - Dharshu Shopping</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <h1>🛍️ Dharshu Shopping</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="women.html">Women</a>
+        <a href="boys.html">Boys</a>
+        <a href="kids.html">Kids</a>
+        <a href="electronics.html">Electronics</a>
+        <a href="cart.html">🛒 Cart</a>
+    </nav>
+
+</header>
+
+
+<section class="category-page">
+
+    <h2>👗 Women's Collection</h2>
+
+    <p>Trendy Fashion at Best Prices</p>
+
+
+    <!-- Search -->
+    <div class="search-box">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search Women's Products"
+        >
+
+        <button onclick="searchProducts()">
+            🔍 Search
+        </button>
+
+    </div>
+
+
+    <!-- Filters -->
+    <div class="filters">
+
+        <button onclick="filterProducts('all')">
+            All
+        </button>
+
+        <button onclick="filterProducts('dress')">
+            Dresses
+        </button>
+
+        <button onclick="filterProducts('kurti')">
+            Kurtis
+        </button>
+
+        <button onclick="filterProducts('saree')">
+            Sarees
+        </button>
+
+        <button onclick="filterProducts('western')">
+            Western Wear
+        </button>
+
+    </div>
+
+
+    <!-- Products -->
+    <div class="product-container" id="productContainer">
+
+
+        <!-- 1 -->
+        <div class="product" data-category="dress">
+
+            <div class="product-image">
+    <img src="https://images.squarespace-cdn.com/content/v1/6032e5aa4a2da747346bf920/b960e407-c3ee-4d64-a61c-0cf8928dd80d/TIMELESS-0169.jpg" alt="Designer Women's Dress">
+</div>
+
+            <h3>Designer Women's Dress</h3>
+
+            <del>₹1,499</del>
+            <strong>₹899</strong>
+
+            <span>40% OFF</span>
+
+            <p>⭐ 4.5 | 2,345 Reviews</p>
+
+            <button
+                class="add-cart"
+                data-name="Designer Women's Dress"
+                data-price="899"
+                data-original="1499">
+
+                🛒 Add to Cart
+
+            </button>
+
+        </div>
+
+
+        <!-- 2 -->
+        <div class="product" data-category="dress">
+
+            <div class="product-image">
+    <img src="https://cdn1.allersimplement.com/11719-large_default/mcro0610a.jpg" alt="Floral Summer Dress">
+</div>
+
+            <h3>Floral Summer Dress</h3>
+
+            <del>₹1,299</del>
+            <strong>₹799</strong>
+
+            <span>38% OFF</span>
+
+            <p>⭐ 4.4 | 1,876 Reviews</p>
+
+            <button
+                class="add-cart"
+                data-name="Floral Summer Dress"
+                data-price="799"
+                data-original="1299">
+
+                🛒 Add to Cart
+
+            </button>
+
+        </div>
+
+
+        <!-- 3 -->
+        <div class="product" data-category="dress">
+
+            <div class="product-image">
+    <img src="https://www.gazdaly.com/img/VESTIDOS/nataly1.jpg" alt="Party Wear Dress">
+</div>
+
+            <h3>Party Wear Dress</h3>
+
+            <del>₹1,899</del>
+            <strong>₹1,199</strong>
+
+            <span>37% OFF</span>
+
+            <p>⭐ 4.6 | 2,124 Reviews</p>
+
+            <button
+                class="add-cart"
+                data-name="Party Wear Dress"
+                data-price="1199"
+                data-original="1899">
+
+                🛒 Add to Cart
+
+            </button>
+
+        </div>
+
+
+        <!-- 4 -->
+        <div class="product" data-category="dress">
+
+           <div class="product-image">
+    <img src="https://pngpix.com/images/hd/simple-white-summer-dress-png-vna-e303c8e31q7in122.jpg" alt="Cotton Casual Dress">
+</div>
+
+            <h3>Cotton Casual Dress</h3>
+
+            <del>₹999</del>
+            <strong>₹599</strong>
+
+            <span>40% OFF</span>
+
+            <p>⭐ 4.3 | 1,543 Reviews</p>
+
+            <button
+                class="add-cart"
+                data-name="Cotton Casual Dress"
+                data-price="599"
+                data-original="999">
+
+                🛒 Add to Cart
+
+            </button>
+
+        </div>
+
+
+        <!-- 5 -->
+        <div class="product" data-category="kurti">
+
+            <div class="product-image">
+    <img src="https://www.loharstudio.com/public/uploads/portfolio_images/1754467726-suit%20%28243%29.webp" alt="Floral Kurti">
+</div>
+
+            <h3>Floral Kurti</h3>
+
+            <del>₹999</del>
+            <strong>₹599</strong>
+
+            <span>40% OFF</span>
+
+            <p>⭐ 4.3 | 1,876 Reviews</p>
+
+            <button
+                class="add-cart"
+                data-name="Floral Kurti"
+                data-price="599"
+                data-original="999">
+
+                🛒 Add to Cart
+
+            </button>
+
+        </div>
+
+
+        <!-- 6 -->
+        <div class="product" data-category="kurti">
+
+            <div class="product-image">
+    <img src="https://www.mystore.in/s/62ea2c599d1398fa16dbae0a/6486e89f02a90f7bcd38d0f3/513rg0xmuxl.jpg" alt="Cotton Printed Kurti">
+</div>
+
+            <h3>Cotton Printed Kurti</h3>
+
+            <del>₹899</del>
+            <strong>₹549</strong>
+
+            <span>39% OFF</span>
+
+            <p>⭐ 4.5 | 2,012 Reviews</p>
+
+            <button
+                class="add-cart"
+                data-name="Cotton Printed Kurti"
+                data-price="549"
+                data-original="899">
+
+                🛒 Add to Cart
+
+            </button>
+
+        </div>
+
+
+        <!-- 7 -->
+        <div class="product" data-category="kurti">
+
+            <div class="product-image">
+    <img src="https://i.etsystatic.com/59732765/r/il/eed02f/7583420511/il_fullxfull.7583420511_46o9.jpg" alt="Embroidered Kurti">
+</div>
+
+            <h3>Embroidered Kurti</h3>
+
+            <del>₹1,499</del>
+            <strong>₹899</strong>
+
+            <span>40% OFF</span>
+
+            <p>⭐ 4.6 | 1,234 Reviews</p>
+
+            <button
+                class="add-cart"
+                data-name="Embroidered Kurti"
+                data-price="899"
+                data-original="1499">
+
+                🛒 Add to Cart
+
+            </button>
+
+        </div>
+
+
+        <!-- 8 -->
+        <div class="product" data-category="saree">
+
+            <div class="product-image">
+    <img src="https://www.loharstudio.com/public/uploads/portfolio_images/1753265648-saree%20%2830%29.webp" alt="Traditional Saree">
+</div>
+
+            <h3>Traditional Saree</h3>
+
+            <del>₹1,999</del>
+            <strong>₹1,199</strong>
+
+            <span>40% OFF</span>
+
+            <p>⭐ 4.7 | 3,421 Reviews</p>
+
+            <button
+                class="add-cart"
+                data-name="Traditional Saree"
+                data-price="1199"
+                data-original="1999">
+
+                🛒 Add to Cart
+
+            </button>
+
+        </div>
+
+
+        <!-- 9 -->
+        <div class="product" data-category="saree">
+
+            <div class="product-image">
+    <img src="https://www.santarms.com/cdn/shop/files/Banarasi_Silk_Saree_with_Blouse.jpg?v=1763615806&width=1500" alt="Silk Saree">
+</div>
+
+            <h3>Silk Saree</h3>
+
+            <del>₹2,499</del>
+            <strong>₹1,599</strong>
+
+            <span>36% OFF</span>
+
+            <p>⭐ 4.8 | 2,876 Reviews</p>
+
+            <button
+                class="add-cart"
+                data-name="Silk Saree"
+                data-price="1599"
+                data-original="2499">
+
+                🛒 Add to Cart
+
+            </button>
+
+        </div>
+
+
+        <!-- 10 -->
+        <div class="product" data-category="saree">
+
+            <div class="product-image">
+    <img src="https://file.aiquickdraw.com/imgcompressed/img/compressed_d45029474768e143428db9c0453472cc.webp" alt="Designer Saree">
+</div>
+
+            <h3>Designer Saree</h3>
+
+            <del>₹2,999</del>
+            <strong>₹1,799</strong>
+
+            <span>40% OFF</span>
+
+            <p>⭐ 4.6 | 1,987 Reviews</p>
+
+            <button
+                class="add-cart"
+                data-name="Designer Saree"
+                data-price="1799"
+                data-original="2999">
+
+                🛒 Add to Cart
+
+            </button>
+
+        </div>
+
+
+        <!-- 11 -->
+        <div class="product" data-category="western">
+
+            <div class="product-image">
+    <img src="https://bootjack.com/cdn/shop/files/ImgGe_4_338785f4-a6e0-4901-8e96-e4bfd7c479bd.png?v=1711057362&width=1500" alt="Western Top">
+</div>
+
+            <h3>Western Top</h3>
+
+            <del>₹799</del>
+            <strong>₹449</strong>
+
+            <span>44% OFF</span>
+
+            <p>⭐ 4.4 | 1,567 Reviews</p>
+
+            <button
+                class="add-cart"
+                data-name="Western Top"
+                data-price="449"
+                data-original="799">
+
+                🛒 Add to Cart
+
+            </button>
+
+        </div>
+
+
+        <!-- 12 -->
+        <div class="product" data-category="western">
+
+            <div class="product-image">
+    <img src="https://media.centrepointstores.com/i/centrepoint/188830397Blue-188830397CP01102025_02-2100.jpg?%24prodimg-d-prt-pdp-2x%24=&%24quality-standard%24=&fmt=auto&sm=c" alt="Western Jeans">
+</div>
+
+            <h3>Western Jeans</h3>
+
+            <del>₹1,499</del>
+            <strong>₹899</strong>
+
+            <span>40% OFF</span>
+
+            <p>⭐ 4.5 | 2,345 Reviews</p>
+
+            <button
+                class="add-cart"
+                data-name="Western Jeans"
+                data-price="899"
+                data-original="1499">
+
+                🛒 Add to Cart
+
+            </button>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<script src="script.js"></script>
+
+
+<script>
+
+function filterProducts(category) {
+
+    const products =
+        document.querySelectorAll(".product");
+
+
+    products.forEach(product => {
+
+        if (
+            category === "all" ||
+            product.dataset.category === category
+        ) {
+
+            product.style.display = "block";
+
+        } else {
+
+            product.style.display = "none";
+
+        }
+
+    });
+
+}
+
+
+function searchProducts() {
+
+    const search =
+        document
+        .getElementById("searchInput")
+        .value
+        .toLowerCase();
+
+
+    const products =
+        document.querySelectorAll(".product");
+
+
+    products.forEach(product => {
+
+        const name =
+            product
+            .querySelector("h3")
+            .innerText
+            .toLowerCase();
+
+
+        if (name.includes(search)) {
+
+            product.style.display = "block";
+
+        } else {
+
+            product.style.display = "none";
+
+        }
+
+    });
+
+}
+
+
+</script>
+
+</body>
+
+</html>
+```
